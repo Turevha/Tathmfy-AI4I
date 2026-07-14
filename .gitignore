@@ -1,0 +1,21 @@
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# macOS
+.DS_Store
+
+# Secrets
+*.env
+.env.*
+
+# IDE
+.cursor/
+.vscode/

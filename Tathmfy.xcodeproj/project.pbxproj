@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* TathmfyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* TathmfyApp.swift */; };
+		B10000000000000000000002 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000002 /* AppView.swift */; };
+		B10000000000000000000003 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* Theme.swift */; };
+		B10000000000000000000004 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000004 /* ThemeColors.swift */; };
+		B10000000000000000000005 /* ThemeTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* ThemeTypography.swift */; };
+		B10000000000000000000006 /* ThemeSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000006 /* ThemeSpacing.swift */; };
+		B10000000000000000000007 /* ScoreTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000007 /* ScoreTier.swift */; };
+		B10000000000000000000008 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000008 /* PrimaryButton.swift */; };
+		B10000000000000000000009 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000009 /* SecondaryButton.swift */; };
+		B1000000000000000000000A /* VerifiedBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000A /* VerifiedBadge.swift */; };
+		B1000000000000000000000B /* ManualBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000B /* ManualBadge.swift */; };
+		B1000000000000000000000C /* TathmfyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000C /* TathmfyCard.swift */; };
+		B1000000000000000000000D /* TathmfyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000D /* TathmfyTextField.swift */; };
+		B1000000000000000000000E /* TathmfyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000E /* TathmfyTabBar.swift */; };
+		B1000000000000000000000F /* ComponentGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000F /* ComponentGalleryView.swift */; };
+		B10000000000000000000010 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000010 /* Entry.swift */; };
+		B10000000000000000000011 /* VerifiedSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000011 /* VerifiedSource.swift */; };
+		B10000000000000000000012 /* ScoreSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000012 /* ScoreSnapshot.swift */; };
+		B10000000000000000000013 /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000013 /* Certificate.swift */; };
+		B10000000000000000000014 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000014 /* ChatMessage.swift */; };
+		B10000000000000000000015 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000015 /* UserProfile.swift */; };
+		B10000000000000000000016 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000016 /* PersistenceController.swift */; };
+		B10000000000000000000017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000017 /* Assets.xcassets */; };
+		B10000000000000000000018 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = P10000000000000000000001 /* ComposableArchitecture */; };
+		B10000000000000000000019 /* TathmfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000018 /* TathmfyTests.swift */; };
+		B1000000000000000000001A /* ScoreDialGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001B /* ScoreDialGeometry.swift */; };
+		B1000000000000000000001B /* ScoreDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001C /* ScoreDial.swift */; };
+		B1000000000000000000001C /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001D /* AppTab.swift */; };
+		B1000000000000000000001D /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001E /* AppFeature.swift */; };
+		B1000000000000000000001E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000001F /* HomeView.swift */; };
+		B1000000000000000000001F /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000020 /* ScoreView.swift */; };
+		B10000000000000000000020 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000021 /* LogView.swift */; };
+		B10000000000000000000021 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000022 /* ShareView.swift */; };
+		B10000000000000000000022 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000023 /* ChatView.swift */; };
+		B10000000000000000000023 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000024 /* AuthClient.swift */; };
+		B10000000000000000000024 /* SessionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000025 /* SessionFeature.swift */; };
+		B10000000000000000000025 /* ScoreFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000026 /* ScoreFactor.swift */; };
+		B10000000000000000000026 /* ScoreEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000027 /* ScoreEngine.swift */; };
+		B10000000000000000000027 /* EntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000028 /* EntryRepository.swift */; };
+		B10000000000000000000028 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000029 /* OnboardingView.swift */; };
+		B10000000000000000000029 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000002A /* SignInView.swift */; };
+		B1000000000000000000002A /* HomeComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000002B /* HomeComponents.swift */; };
+		B1000000000000000000002B /* HomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000002C /* HomeFeature.swift */; };
+		B1000000000000000000002C /* LogComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000002D /* LogComponents.swift */; };
+		B1000000000000000000002D /* LogFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000002E /* LogFeature.swift */; };
+		B1000000000000000000002E /* ScoreFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000002F /* ScoreFeature.swift */; };
+		B1000000000000000000002F /* ScoreComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000030 /* ScoreComponents.swift */; };
+		B10000000000000000000030 /* ScoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000031 /* ScoreDataService.swift */; };
+		B10000000000000000000032 /* AppIconMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000033 /* AppIconMark.swift */; };
+		B1000000000000000000003D /* BrandLogoMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000003D /* BrandLogoMark.swift */; };
+		B10000000000000000000033 /* ThemeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000034 /* ThemeLayout.swift */; };
+		B10000000000000000000035 /* EntryAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000035 /* EntryAnalytics.swift */; };
+		B10000000000000000000036 /* CertificateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000036 /* CertificateService.swift */; };
+		B10000000000000000000037 /* StatementOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000037 /* StatementOCRService.swift */; };
+		B10000000000000000000038 /* ShareExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000038 /* ShareExportService.swift */; };
+		B10000000000000000000039 /* AppDataRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000039 /* AppDataRefresh.swift */; };
+		B1000000000000000000003A /* StatementCameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000003A /* StatementCameraSession.swift */; };
+		B1000000000000000000003B /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000003B /* CameraPreviewView.swift */; };
+		B1000000000000000000003E /* DevFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000040 /* DevFlags.swift */; };
+		B1000000000000000000003F /* UserProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000041 /* UserProfileRepository.swift */; };
+		B10000000000000000000040 /* ScoreSnapshotRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000042 /* ScoreSnapshotRepository.swift */; };
+		B10000000000000000000041 /* GoogleSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000045 /* GoogleSignInService.swift */; };
+		B10000000000000000000042 /* LedgerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000043 /* LedgerFeature.swift */; };
+		B10000000000000000000043 /* LedgerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000044 /* LedgerView.swift */; };
+		B10000000000000000000044 /* FontRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000046 /* FontRegistration.swift */; };
+		B10000000000000000000045 /* ChatFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000047 /* ChatFeature.swift */; };
+		B10000000000000000000046 /* ChatFinancialContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000048 /* ChatFinancialContext.swift */; };
+		B10000000000000000000047 /* ChatAssistantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000049 /* ChatAssistantService.swift */; };
+		B10000000000000000000048 /* LocalChatAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000004A /* LocalChatAssistant.swift */; };
+		B10000000000000000000049 /* ChatMessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000004B /* ChatMessageRepository.swift */; };
+		B1000000000000000000004A /* BricolageGrotesque-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000004C /* BricolageGrotesque-Variable.ttf */; };
+		B1000000000000000000004B /* HankenGrotesk-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000004D /* HankenGrotesk-Variable.ttf */; };
+		B1000000000000000000004C /* InstrumentSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000004E /* InstrumentSerif-Italic.ttf */; };
+		B1000000000000000000004D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = P10000000000000000000004 /* GoogleSignIn */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		X10000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PROJECT000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = T10000000000000000000001;
+			remoteInfo = Tathmfy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F10000000000000000000001 /* TathmfyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TathmfyApp.swift; sourceTree = "<group>"; };
+		F10000000000000000000002 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		F10000000000000000000003 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F10000000000000000000004 /* ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
+		F10000000000000000000005 /* ThemeTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTypography.swift; sourceTree = "<group>"; };
+		F10000000000000000000006 /* ThemeSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSpacing.swift; sourceTree = "<group>"; };
+		F10000000000000000000007 /* ScoreTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTier.swift; sourceTree = "<group>"; };
+		F10000000000000000000008 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F10000000000000000000009 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		F1000000000000000000000A /* VerifiedBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedBadge.swift; sourceTree = "<group>"; };
+		F1000000000000000000000B /* ManualBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualBadge.swift; sourceTree = "<group>"; };
+		F1000000000000000000000C /* TathmfyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TathmfyCard.swift; sourceTree = "<group>"; };
+		F1000000000000000000000D /* TathmfyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TathmfyTextField.swift; sourceTree = "<group>"; };
+		F1000000000000000000000E /* TathmfyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TathmfyTabBar.swift; sourceTree = "<group>"; };
+		F1000000000000000000000F /* ComponentGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentGalleryView.swift; sourceTree = "<group>"; };
+		F10000000000000000000010 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		F10000000000000000000011 /* VerifiedSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedSource.swift; sourceTree = "<group>"; };
+		F10000000000000000000012 /* ScoreSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSnapshot.swift; sourceTree = "<group>"; };
+		F10000000000000000000013 /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
+		F10000000000000000000014 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		F10000000000000000000015 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		F10000000000000000000016 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		F10000000000000000000017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F10000000000000000000018 /* TathmfyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TathmfyTests.swift; sourceTree = "<group>"; };
+		F10000000000000000000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1000000000000000000001B /* ScoreDialGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDialGeometry.swift; sourceTree = "<group>"; };
+		F1000000000000000000001C /* ScoreDial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDial.swift; sourceTree = "<group>"; };
+		F1000000000000000000001D /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		F1000000000000000000001E /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		F1000000000000000000001F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F10000000000000000000020 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		F10000000000000000000021 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		F10000000000000000000022 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		F10000000000000000000023 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F10000000000000000000024 /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		F10000000000000000000025 /* SessionFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFeature.swift; sourceTree = "<group>"; };
+		F10000000000000000000026 /* ScoreFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFactor.swift; sourceTree = "<group>"; };
+		F10000000000000000000027 /* ScoreEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEngine.swift; sourceTree = "<group>"; };
+		F10000000000000000000028 /* EntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepository.swift; sourceTree = "<group>"; };
+		F10000000000000000000029 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F1000000000000000000002A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F1000000000000000000002B /* HomeComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComponents.swift; sourceTree = "<group>"; };
+		F1000000000000000000002C /* HomeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeature.swift; sourceTree = "<group>"; };
+		F1000000000000000000002D /* LogComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogComponents.swift; sourceTree = "<group>"; };
+		F1000000000000000000002E /* LogFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFeature.swift; sourceTree = "<group>"; };
+		F1000000000000000000002F /* ScoreFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFeature.swift; sourceTree = "<group>"; };
+		F10000000000000000000030 /* ScoreComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreComponents.swift; sourceTree = "<group>"; };
+		F10000000000000000000031 /* ScoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataService.swift; sourceTree = "<group>"; };
+		F10000000000000000000033 /* AppIconMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconMark.swift; sourceTree = "<group>"; };
+		F1000000000000000000003D /* BrandLogoMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandLogoMark.swift; sourceTree = "<group>"; };
+		F10000000000000000000034 /* ThemeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeLayout.swift; sourceTree = "<group>"; };
+		F10000000000000000000035 /* EntryAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryAnalytics.swift; sourceTree = "<group>"; };
+		F10000000000000000000036 /* CertificateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateService.swift; sourceTree = "<group>"; };
+		F10000000000000000000037 /* StatementOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementOCRService.swift; sourceTree = "<group>"; };
+		F10000000000000000000038 /* ShareExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareExportService.swift; sourceTree = "<group>"; };
+		F10000000000000000000039 /* AppDataRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataRefresh.swift; sourceTree = "<group>"; };
+		F1000000000000000000003A /* StatementCameraSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementCameraSession.swift; sourceTree = "<group>"; };
+		F1000000000000000000003B /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		F10000000000000000000040 /* DevFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevFlags.swift; sourceTree = "<group>"; };
+		F10000000000000000000041 /* UserProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileRepository.swift; sourceTree = "<group>"; };
+		F10000000000000000000042 /* ScoreSnapshotRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSnapshotRepository.swift; sourceTree = "<group>"; };
+		F10000000000000000000043 /* LedgerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerFeature.swift; sourceTree = "<group>"; };
+		F10000000000000000000044 /* LedgerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerView.swift; sourceTree = "<group>"; };
+		F10000000000000000000045 /* GoogleSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInService.swift; sourceTree = "<group>"; };
+		F10000000000000000000046 /* FontRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontRegistration.swift; sourceTree = "<group>"; };
+		F10000000000000000000047 /* ChatFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFeature.swift; sourceTree = "<group>"; };
+		F10000000000000000000048 /* ChatFinancialContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFinancialContext.swift; sourceTree = "<group>"; };
+		F10000000000000000000049 /* ChatAssistantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAssistantService.swift; sourceTree = "<group>"; };
+		F1000000000000000000004A /* LocalChatAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalChatAssistant.swift; sourceTree = "<group>"; };
+		F1000000000000000000004B /* ChatMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRepository.swift; sourceTree = "<group>"; };
+		F1000000000000000000004C /* BricolageGrotesque-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Variable.ttf"; sourceTree = "<group>"; };
+		F1000000000000000000004D /* HankenGrotesk-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HankenGrotesk-Variable.ttf"; sourceTree = "<group>"; };
+		F1000000000000000000004E /* InstrumentSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstrumentSerif-Italic.ttf"; sourceTree = "<group>"; };
+		F1000000000000000000004F /* GoogleService-Info.plist.example */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist.example"; sourceTree = "<group>"; };
+		F1000000000000000000003D /* BrandLogoMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandLogoMark.swift; sourceTree = "<group>"; };
+		P10000000000000000000002 /* Tathmfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tathmfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		P10000000000000000000003 /* TathmfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TathmfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000018 /* ComposableArchitecture in Frameworks */,
+				B1000000000000000000004D /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G10000000000000000000002 /* Tathmfy */,
+				G10000000000000000000003 /* TathmfyTests */,
+				G10000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10000000000000000000002 /* Tathmfy */ = {
+			isa = PBXGroup;
+			children = (
+				G10000000000000000000005 /* App */,
+				G1000000000000000000000B /* Features */,
+				G10000000000000000000006 /* Core */,
+				G10000000000000000000007 /* Resources */,
+			);
+			path = Tathmfy;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000003 /* TathmfyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000018 /* TathmfyTests.swift */,
+			);
+			path = TathmfyTests;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				P10000000000000000000002 /* Tathmfy.app */,
+				P10000000000000000000003 /* TathmfyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000001 /* TathmfyApp.swift */,
+				F1000000000000000000001E /* AppFeature.swift */,
+				F1000000000000000000001D /* AppTab.swift */,
+				F10000000000000000000002 /* AppView.swift */,
+				F10000000000000000000039 /* AppDataRefresh.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000006 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				G10000000000000000000011 /* Auth */,
+				G10000000000000000000012 /* Scoring */,
+				G10000000000000000000016 /* Chat */,
+				G10000000000000000000013 /* Repositories */,
+				G10000000000000000000008 /* Theme */,
+				G10000000000000000000009 /* Components */,
+				G1000000000000000000000A /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000017 /* Assets.xcassets */,
+				F10000000000000000000019 /* Info.plist */,
+				F1000000000000000000004F /* GoogleService-Info.plist.example */,
+				G10000000000000000000017 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000008 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000003 /* Theme.swift */,
+				F10000000000000000000004 /* ThemeColors.swift */,
+				F10000000000000000000005 /* ThemeTypography.swift */,
+				F10000000000000000000006 /* ThemeSpacing.swift */,
+				F10000000000000000000034 /* ThemeLayout.swift */,
+				F10000000000000000000046 /* FontRegistration.swift */,
+				F10000000000000000000007 /* ScoreTier.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000009 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000008 /* PrimaryButton.swift */,
+				F10000000000000000000009 /* SecondaryButton.swift */,
+				F1000000000000000000000A /* VerifiedBadge.swift */,
+				F1000000000000000000000B /* ManualBadge.swift */,
+				F1000000000000000000000C /* TathmfyCard.swift */,
+				F1000000000000000000000D /* TathmfyTextField.swift */,
+				F1000000000000000000000E /* TathmfyTabBar.swift */,
+				F1000000000000000000000F /* ComponentGalleryView.swift */,
+				F1000000000000000000001B /* ScoreDialGeometry.swift */,
+				F1000000000000000000001C /* ScoreDial.swift */,
+				F10000000000000000000033 /* AppIconMark.swift */,
+				F1000000000000000000003D /* BrandLogoMark.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000010 /* Entry.swift */,
+				F10000000000000000000011 /* VerifiedSource.swift */,
+				F10000000000000000000012 /* ScoreSnapshot.swift */,
+				F10000000000000000000013 /* Certificate.swift */,
+				F10000000000000000000014 /* ChatMessage.swift */,
+				F10000000000000000000015 /* UserProfile.swift */,
+				F10000000000000000000016 /* PersistenceController.swift */,
+				F10000000000000000000040 /* DevFlags.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				G10000000000000000000014 /* Onboarding */,
+				G10000000000000000000015 /* Ledger */,
+				G1000000000000000000000C /* Home */,
+				G1000000000000000000000D /* Score */,
+				G1000000000000000000000E /* Log */,
+				G1000000000000000000000F /* Share */,
+				G10000000000000000000010 /* Chat */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000015 /* Ledger */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000043 /* LedgerFeature.swift */,
+				F10000000000000000000044 /* LedgerView.swift */,
+			);
+			path = Ledger;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000017 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F1000000000000000000004C /* BricolageGrotesque-Variable.ttf */,
+				F1000000000000000000004D /* HankenGrotesk-Variable.ttf */,
+				F1000000000000000000004E /* InstrumentSerif-Italic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000016 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000048 /* ChatFinancialContext.swift */,
+				F10000000000000000000049 /* ChatAssistantService.swift */,
+				F1000000000000000000004A /* LocalChatAssistant.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F1000000000000000000002C /* HomeFeature.swift */,
+				F1000000000000000000002B /* HomeComponents.swift */,
+				F1000000000000000000001F /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000D /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				F1000000000000000000002F /* ScoreFeature.swift */,
+				F10000000000000000000030 /* ScoreComponents.swift */,
+				F10000000000000000000020 /* ScoreView.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000E /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				F1000000000000000000002E /* LogFeature.swift */,
+				F1000000000000000000002D /* LogComponents.swift */,
+				F10000000000000000000021 /* LogView.swift */,
+				F1000000000000000000003B /* CameraPreviewView.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000F /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000022 /* ShareView.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000010 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000023 /* ChatView.swift */,
+				F10000000000000000000047 /* ChatFeature.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000011 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000024 /* AuthClient.swift */,
+				F10000000000000000000025 /* SessionFeature.swift */,
+				F10000000000000000000045 /* GoogleSignInService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000012 /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000026 /* ScoreFactor.swift */,
+				F10000000000000000000027 /* ScoreEngine.swift */,
+				F10000000000000000000031 /* ScoreDataService.swift */,
+				F10000000000000000000035 /* EntryAnalytics.swift */,
+			);
+			path = Scoring;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000013 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000028 /* EntryRepository.swift */,
+				F10000000000000000000041 /* UserProfileRepository.swift */,
+				F10000000000000000000042 /* ScoreSnapshotRepository.swift */,
+				F1000000000000000000004B /* ChatMessageRepository.swift */,
+				F10000000000000000000036 /* CertificateService.swift */,
+				F10000000000000000000037 /* StatementOCRService.swift */,
+				F1000000000000000000003A /* StatementCameraSession.swift */,
+				F10000000000000000000038 /* ShareExportService.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000014 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000029 /* OnboardingView.swift */,
+				F1000000000000000000002A /* SignInView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10000000000000000000001 /* Tathmfy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10000000000000000000001 /* Build configuration list for PBXNativeTarget "Tathmfy" */;
+			buildPhases = (
+				S10000000000000000000001 /* Sources */,
+				C10000000000000000000001 /* Frameworks */,
+				R10000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tathmfy;
+			packageProductDependencies = (
+				P10000000000000000000001 /* ComposableArchitecture */,
+				P10000000000000000000004 /* GoogleSignIn */,
+			);
+			productName = Tathmfy;
+			productReference = P10000000000000000000002 /* Tathmfy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		T10000000000000000000002 /* TathmfyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10000000000000000000002 /* Build configuration list for PBXNativeTarget "TathmfyTests" */;
+			buildPhases = (
+				S10000000000000000000002 /* Sources */,
+				C10000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				X10000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = TathmfyTests;
+			productName = TathmfyTests;
+			productReference = P10000000000000000000003 /* TathmfyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					T10000000000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					T10000000000000000000002 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = T10000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = D10000000000000000000003 /* Build configuration list for PBXProject "Tathmfy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G10000000000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				PKG000000000000000000001 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				PKG000000000000000000002 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = G10000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10000000000000000000001 /* Tathmfy */,
+				T10000000000000000000002 /* TathmfyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R10000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000017 /* Assets.xcassets in Resources */,
+				B1000000000000000000004A /* BricolageGrotesque-Variable.ttf in Resources */,
+				B1000000000000000000004B /* HankenGrotesk-Variable.ttf in Resources */,
+				B1000000000000000000004C /* InstrumentSerif-Italic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* TathmfyApp.swift in Sources */,
+				B10000000000000000000002 /* AppView.swift in Sources */,
+				B10000000000000000000003 /* Theme.swift in Sources */,
+				B10000000000000000000004 /* ThemeColors.swift in Sources */,
+				B10000000000000000000005 /* ThemeTypography.swift in Sources */,
+				B10000000000000000000006 /* ThemeSpacing.swift in Sources */,
+				B10000000000000000000033 /* ThemeLayout.swift in Sources */,
+				B10000000000000000000007 /* ScoreTier.swift in Sources */,
+				B10000000000000000000008 /* PrimaryButton.swift in Sources */,
+				B10000000000000000000009 /* SecondaryButton.swift in Sources */,
+				B1000000000000000000000A /* VerifiedBadge.swift in Sources */,
+				B1000000000000000000000B /* ManualBadge.swift in Sources */,
+				B1000000000000000000000C /* TathmfyCard.swift in Sources */,
+				B1000000000000000000000D /* TathmfyTextField.swift in Sources */,
+				B1000000000000000000000E /* TathmfyTabBar.swift in Sources */,
+				B1000000000000000000000F /* ComponentGalleryView.swift in Sources */,
+				B1000000000000000000001A /* ScoreDialGeometry.swift in Sources */,
+				B1000000000000000000001B /* ScoreDial.swift in Sources */,
+				B10000000000000000000032 /* AppIconMark.swift in Sources */,
+				B1000000000000000000001C /* AppTab.swift in Sources */,
+				B1000000000000000000001D /* AppFeature.swift in Sources */,
+				B1000000000000000000001E /* HomeView.swift in Sources */,
+				B1000000000000000000001F /* ScoreView.swift in Sources */,
+				B10000000000000000000020 /* LogView.swift in Sources */,
+				B10000000000000000000021 /* ShareView.swift in Sources */,
+				B10000000000000000000022 /* ChatView.swift in Sources */,
+				B10000000000000000000023 /* AuthClient.swift in Sources */,
+				B10000000000000000000024 /* SessionFeature.swift in Sources */,
+				B10000000000000000000025 /* ScoreFactor.swift in Sources */,
+				B10000000000000000000026 /* ScoreEngine.swift in Sources */,
+				B10000000000000000000027 /* EntryRepository.swift in Sources */,
+				B10000000000000000000028 /* OnboardingView.swift in Sources */,
+				B10000000000000000000029 /* SignInView.swift in Sources */,
+				B1000000000000000000002A /* HomeComponents.swift in Sources */,
+				B1000000000000000000002B /* HomeFeature.swift in Sources */,
+				B1000000000000000000002C /* LogComponents.swift in Sources */,
+				B1000000000000000000002D /* LogFeature.swift in Sources */,
+				B1000000000000000000002E /* ScoreFeature.swift in Sources */,
+				B1000000000000000000002F /* ScoreComponents.swift in Sources */,
+				B10000000000000000000030 /* ScoreDataService.swift in Sources */,
+				B10000000000000000000035 /* EntryAnalytics.swift in Sources */,
+				B10000000000000000000036 /* CertificateService.swift in Sources */,
+				B10000000000000000000037 /* StatementOCRService.swift in Sources */,
+				B10000000000000000000038 /* ShareExportService.swift in Sources */,
+				B10000000000000000000039 /* AppDataRefresh.swift in Sources */,
+				B1000000000000000000003A /* StatementCameraSession.swift in Sources */,
+				B1000000000000000000003B /* CameraPreviewView.swift in Sources */,
+				B1000000000000000000003D /* BrandLogoMark.swift in Sources */,
+				B1000000000000000000003E /* DevFlags.swift in Sources */,
+				B1000000000000000000003F /* UserProfileRepository.swift in Sources */,
+				B10000000000000000000040 /* ScoreSnapshotRepository.swift in Sources */,
+				B10000000000000000000041 /* GoogleSignInService.swift in Sources */,
+				B10000000000000000000042 /* LedgerFeature.swift in Sources */,
+				B10000000000000000000043 /* LedgerView.swift in Sources */,
+				B10000000000000000000044 /* FontRegistration.swift in Sources */,
+				B10000000000000000000045 /* ChatFeature.swift in Sources */,
+				B10000000000000000000046 /* ChatFinancialContext.swift in Sources */,
+				B10000000000000000000047 /* ChatAssistantService.swift in Sources */,
+				B10000000000000000000048 /* LocalChatAssistant.swift in Sources */,
+				B10000000000000000000049 /* ChatMessageRepository.swift in Sources */,
+				B10000000000000000000010 /* Entry.swift in Sources */,
+				B10000000000000000000011 /* VerifiedSource.swift in Sources */,
+				B10000000000000000000012 /* ScoreSnapshot.swift in Sources */,
+				B10000000000000000000013 /* Certificate.swift in Sources */,
+				B10000000000000000000014 /* ChatMessage.swift in Sources */,
+				B10000000000000000000015 /* UserProfile.swift in Sources */,
+				B10000000000000000000016 /* PersistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		S10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000019 /* TathmfyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		X10000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = T10000000000000000000001 /* Tathmfy */;
+			targetProxy = X10000000000000000000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC0000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 642843D7L2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Tathmfy/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tathmfy.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC0000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 642843D7L2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Tathmfy/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tathmfy.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tathmfy.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tathmfy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tathmfy";
+			};
+			name = Debug;
+		};
+		BC0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tathmfy.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tathmfy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tathmfy";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC0000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC0000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D10000000000000000000001 /* Build configuration list for PBXNativeTarget "Tathmfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000000000000000000001 /* Debug */,
+				BC0000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10000000000000000000002 /* Build configuration list for PBXNativeTarget "TathmfyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000000000000000000003 /* Debug */,
+				BC0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10000000000000000000003 /* Build configuration list for PBXProject "Tathmfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000000000000000000005 /* Debug */,
+				BC0000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		PKG000000000000000000001 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.19.0;
+			};
+		};
+		PKG000000000000000000002 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		P10000000000000000000001 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = PKG000000000000000000001 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		P10000000000000000000004 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = PKG000000000000000000002 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = PROJECT000000000000000001 /* Project object */;
+}

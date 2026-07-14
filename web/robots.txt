@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Internal design handoff and draft pages — not for search engines
+Disallow: /Tathmfy
+Disallow: /Tathmfy
+Disallow: /design_handoff_tathmfy/
+Disallow: /tathmfy_assets/
+Disallow: /*.md$
+
+Sitemap: https://tathmfy.com/sitemap.xml
