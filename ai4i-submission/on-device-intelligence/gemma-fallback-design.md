@@ -14,10 +14,11 @@ The scoring path **never** depends on a language model.
 
 ## Integration sketch
 
-1. `ChatAssistantService` already branches to `LocalChatAssistant` when Foundation Models is unavailable.
-2. A future `GemmaChatProvider` would implement the same `AsyncThrowingStream<String, Error>` interface.
-3. Model weights ship as an optional on-demand asset (App Store size and regional bandwidth considered).
-4. Quantisation: 4-bit or 8-bit GGUF / MLX — final choice after on-device profiling.
+1. `ChatAssistantService` checks Foundation Models availability (live).
+2. `Gemma3QuantizedEngine` (reference: [`reference/Gemma3QuantizedEngine.swift`](reference/Gemma3QuantizedEngine.swift)) implements the same `OnDeviceLanguageModelProviding` protocol.
+3. `LanguageModelRouter` (reference) shows target order: Foundation Models → Gemma → rules assistant.
+4. Model weights ship as an optional on-demand asset — **not committed in this repo**.
+5. Quantisation: 4-bit GGUF (`.q4_K_M`) preferred for the <256 MB RAM target; 8-bit optional for quality experiments.
 
 ## Design targets (not measurements)
 

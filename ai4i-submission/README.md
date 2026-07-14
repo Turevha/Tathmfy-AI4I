@@ -17,7 +17,7 @@ Architecture, scoring, privacy, testing, and on-device AI notes for the Tathmfy 
 | Scoring engine | [docs/SCORING_ENGINE.md](docs/SCORING_ENGINE.md) |
 | Verification & privacy | [docs/VERIFY_AND_PRIVACY.md](docs/VERIFY_AND_PRIVACY.md) |
 | Testing & validation | [docs/TESTING.md](docs/TESTING.md) |
-| On-device language models | [on-device-intelligence/README.md](on-device-intelligence/README.md) |
+| On-device language models | [on-device-intelligence/README.md](on-device-intelligence/README.md) · [FOUNDATION_MODELS.md](on-device-intelligence/FOUNDATION_MODELS.md) · [reference code](on-device-intelligence/reference/) |
 
 ## Repository layout
 

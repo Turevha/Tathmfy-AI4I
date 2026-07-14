@@ -14,16 +14,25 @@ If Foundation Models errors at runtime, the service falls back to `LocalChatAssi
 
 ## Designated fallback — Gemma 3 1B (quantised)
 
-**Status:** Documented edge strategy for devices without Foundation Models. Not shipped as a separate quantised runtime in the current app binary.
+**Status:** Reference implementation in [`reference/Gemma3QuantizedEngine.swift`](reference/Gemma3QuantizedEngine.swift). Quantised weights are **not** bundled in this repository; production uses `LocalChatAssistant` until the Gemma asset ships.
 
-**Design targets** (engineering goals for a future quantised bundle):
+**Design targets** (engineering goals — validate on device before publishing):
 
 | Target | Rationale |
 |--------|-----------|
 | < 256 MB RAM | Run on mid-tier phones common in target markets |
-| < 100 ms per inference | Keep chat responsive offline |
+| < 100 ms per token step | Keep chat responsive offline |
 
-Design targets are engineering goals. Performance figures will be published only after on-device validation on representative hardware.
+See also [`FOUNDATION_MODELS.md`](FOUNDATION_MODELS.md) for the live Apple path.
+
+## Reference code (for reviewers)
+
+| File | Purpose |
+|------|---------|
+| [`reference/README.md`](reference/README.md) | How to read the reference layer |
+| [`reference/FoundationModelsChatProvider.swift`](reference/FoundationModelsChatProvider.swift) | Mirrors live Foundation Models integration |
+| [`reference/Gemma3QuantizedEngine.swift`](reference/Gemma3QuantizedEngine.swift) | Gemma load lifecycle + streaming shape |
+| [`reference/LanguageModelRouter.swift`](reference/LanguageModelRouter.swift) | Provider selection order |
 
 ## Why not cloud inference?
 
@@ -35,5 +44,7 @@ Receipt and mobile-money statement capture uses on-device Vision OCR plus catego
 
 ## Further reading
 
-- [gemma-fallback-design.md](gemma-fallback-design.md) — integration outline without fabricated code
+- [FOUNDATION_MODELS.md](FOUNDATION_MODELS.md) — live Apple integration in the app
+- [reference/Gemma3QuantizedEngine.swift](reference/Gemma3QuantizedEngine.swift) — quantised fallback reference code
+- [gemma-fallback-design.md](gemma-fallback-design.md) — integration outline
 - [../docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md) — full system diagram
